@@ -18,6 +18,19 @@
   --btn-bg-cl: #188ce8;
 }
 
+   /* others */
+ html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+} */
+
 /* reset styles */
 .link {
   text-decoration: none;
@@ -32,6 +45,7 @@
 .btn {
   font-family: inherit;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .footer-address {
@@ -83,7 +97,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  }
+}
 
 /* HEADER */
 
