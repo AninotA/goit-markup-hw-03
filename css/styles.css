@@ -18,27 +18,27 @@
   --btn-bg-cl: #188ce8;
 }
 
-   /* others */
- html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-} */
-
 /* reset styles */
-.link {
+a {
   text-decoration: none;
   color: currentColor;
 }
 
-.list {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* base styles */
