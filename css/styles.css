@@ -19,7 +19,7 @@
 }
 
 /* reset styles */
-a {
+.link {
   text-decoration: none;
   color: currentColor;
 }
@@ -34,14 +34,24 @@ p {
   margin: 0;
 }
 
-ul,
-ol {
+.list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 /* base styles */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
 .btn {
   font-family: inherit;
   cursor: pointer;
@@ -80,6 +90,7 @@ body {
 
 .logo {
   color: #000000;
+  margin-right: 93px;
 }
 
 .web {
@@ -101,10 +112,23 @@ body {
 
 /* HEADER */
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
 .header-link {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link:hover,
@@ -116,11 +140,23 @@ body {
   color: var(--accent-txt-cl);
 }
 
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.contacts {
+  display: flex;
+}
+
 .contacts-mail {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--descr-txt-cl);
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-mail:hover,
@@ -133,6 +169,8 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--descr-txt-cl);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-phone:hover,
